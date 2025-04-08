@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Celtec</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Header / Banner */
+    header {
+      background-color: #004080;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #0059b3;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0;
+    }
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #003366;
+    }
+
+    /* Main Content */
+    main {
+      width: 80%;
+      max-width: 1000px;
+      margin: 20px auto;
+    }
+    .contact-steps {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+    .contact-images {
+      display: flex;
+      flex-wrap: wrap; /* So it wraps on smaller screens */
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .contact-images img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+    }
+    .contact-steps p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .contact-steps h2 {
+      margin-bottom: 10px;
+      color: #004080;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* ------------------------------------------------------
+       EMBEDDED FORM CONTAINER STYLES
+       ------------------------------------------------------ */
+
+    /* Form container */
+    .form-container {
+      width: 80%;
+      max-width: 600px;
+      background-color: #093A3E;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 0 auto; /* Center the form container */
+    }
+
+    /* Form titles and descriptions */
+    .form-title {
+      color: white;
+      margin-bottom: 10px;
+    }
+    .form-description {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    /* Label styles */
+    .form-container label {
+      color: white;
+      display: block; /* Each label on its own line */
+      margin-top: 10px;
+    }
+
+    /* Input fields */
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="tel"] {
+      width: 100%; /* Makes the input fields full width */
+      max-width: 400px; /* Optional consistent max width */
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    /* Disclaimer text */
+    .form-disclaimer {
+      color: white;
+      margin-top: 10px;
+    }
+
+    /* Submit button */
+    .registerbtn {
+      background-color: #ED2939;
+      border: 3px solid #D21F3C;
+      border-radius: 25px;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .registerbtn:hover {
+      background-color: #D21F3C;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner with logo -->
+  <header>
+    <img src="banner.png" alt="Celtec Banner">
+  </header>
+
+  <!-- Navigation buttons -->
+  <nav>
+    <ul>
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="about.htm">About</a></li>
+      <li><a href="products.htm">Products</a></li>
+      <li><a href="blog.htm">Blog</a></li>
+      <li><a href="contact.htm">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <!-- Step-by-step contact instructions -->
+    <div class="contact-steps">
+      <h2>How to Contact Us</h2>
+      <div class="contact-images">
+        <!-- Replace with actual filenames -->
+        <img src="https://i.ibb.co/1fnSBNYZ/image.png" alt="Contact Step 1">
+        <img src="https://i.ibb.co/7tyR9xtx/image.png" alt="Contact Step 2">
+        <img src="https://i.ibb.co/HLW8cCVM/image.png" alt="Contact Step 3">
+      </div>
+      <p>
+        1. Open our official Celtec website and find the “Support” section.<br />
+        2. Fill out the contact form, ensuring you include your email address 
+        and a detailed description of your issue.<br />
+        3. Submit the form and wait for a confirmation message to appear on your screen.
+      </p>
+      <p>
+        If you prefer email, you can reach us at <strong>22137948@cambria.ac.uk</strong>.
+        For urgent inquiries, please call our main office at <strong>+44 (0) 1234 567890</strong>.
+      </p>
+    </div>
+<!-- Contact Form Section using .form-container styles -->
+<section class="form-container">
+  <h2 class="form-title">Contact Form</h2>
+  <p class="form-description">Send us your questions or feedback below!</p>
+
+  <form action="mailto:22137948@cambria.ac.uk" method="post" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+    <!-- Query field as a textarea -->
+    <label for="query">Query:</label>
+    <textarea id="query" name="query" placeholder="Enter your query here..." rows="5" required></textarea>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+    <p class="form-disclaimer">Your information will remain confidential.</p>
+
+    <button type="submit" class="registerbtn">Submit</button>
+  </form>
+</section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Celtec. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

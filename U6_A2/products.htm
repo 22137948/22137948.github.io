@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Games</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    /* Navigation */
+    nav {
+      background-color: #0059b3;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0;
+    }
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #003366;
+    }
+    main {
+      width: 80%;
+      max-width: 1000px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40px; /* spacing between game sections */
+    }
+    .game-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      text-align: center;
+    }
+    .game-section img {
+      transition: transform 0.3s ease;
+      width: 100%;
+      max-width: 600px; /* keep large images manageable */
+      margin-bottom: 15px;
+    }
+    .game-section img:hover {
+      transform: scale(1.05); /* zoom in */
+    }
+    .game-description {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      max-width: 800px;
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .game-description h2 {
+      margin-bottom: 10px;
+      color: #004080;
+    }
+    .game-description p {
+      line-height: 1.6;
+    }
+    footer {
+      background-color: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    /* Media query for mobile */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li a {
+        text-align: center;
+        padding: 10px;
+      }
+      main {
+        width: 90%;
+        gap: 20px;
+      }
+      .game-description {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="banner.png" alt="Celtec Banner" />
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="about.htm">About</a></li>
+      <li><a href="products.htm">Products</a></li>
+      <li><a href="blog.htm">Blog</a></li>
+      <li><a href="contact.htm">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- First Game -->
+    <section class="game-section">
+      <img src="https://i.ibb.co/fdtqMVVw/image.png" alt="Image of new game" />
+      <div class="game-description">
+        <h2>Exciting New Update</h2>
+        <p>
+          Here’s a sneak peek at our upcoming game update for Pan of Destiny. In a land where shadows consume the innocent and fate wears a cloak, an unassuming chef must rise against the darkness. When a mysterious child with an apple for a head—rumored to be the Seed of Light—appears at his doorstep, Chef Bruno’s quiet life of stews and soufflés is shattered. Now, armed only with a frying pan and his indomitable spirit, he must defend the child from an ancient, hooded wraith bent on snuffing out the last hope of the world. Pan of Destiny is a surreal action-adventure that blends culinary combat, enchanted landscapes, and a tale of unlikely heroism where the recipe for survival is courage, chaos, and a dash of fate.
+        </p>
+      </div>
+    </section>
+    <!-- Second Game -->
+    <section class="game-section">
+      <img src="https://i.ibb.co/BdCdqHn/image.png" alt="Image of another new game" />
+      <div class="game-description">
+        <h2>Another Thrilling Title</h2>
+        <p>
+          Discover the next big thing in our games catalog. This all new game... "Dust & Steel"
+        </p>
+        <p>
+          Dust & Steel pushes the boundaries with innovative gameplay, stunning visuals, and interactive features designed to delight fans worldwide. In the sun-scorched wastelands of the Old Frontier, legends whisper of an outlaw named Jesse McCall, whose fists are swift and whose spirit unbreakable. When an enigmatic portal opens, knights from an ancient kingdom pour into Jesse's world, wielding swords and encased in gleaming armor. Bound by honor and driven by survival, Jesse steps forward to challenge their champion, trading gunpowder for grit and steel for fists.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Celtec. All rights reserved.</p>
+  </footer>
+</body>
+</html>
